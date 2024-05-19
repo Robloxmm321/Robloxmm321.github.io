@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 10px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-info {
+    position: relative;
+}
+
+.game-image {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button {
+    background-color: #00a74f;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #008f3d;
+}
+
+.game-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-details h2 {
+    margin: 0;
+}
+
+.author {
+    color: #00a74f;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.action-button {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #3a3a3a;
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #00a74f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #008f3d;
+}
+
+.help-link {
+    display: block;
+    margin-top: 10px;
+    color: #00a74f;
+    text-decoration: none;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
