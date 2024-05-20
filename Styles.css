@@ -1,50 +1,39 @@
 body {
+    background-color: #111;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: #1c1c1c;
+.header nav {
+    background-color: #000;
     padding: 10px;
     text-align: center;
 }
 
-.header nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .header nav a {
-    color: white;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 .game-info {
     position: relative;
+    text-align: center;
 }
 
 .game-image {
-    width: 500px;
+    width: 800px;
     height: auto;
-    border-radius: 8px;
 }
 
 .play-button-container {
@@ -55,17 +44,13 @@ body {
 }
 
 .play-button {
-    background-color: #00a74f;
+    background-color: #00b300;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 30px;
     border: none;
-    color: white;
-    font-size: 24px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-}
-
-.play-button:hover {
-    background-color: #008f3d;
 }
 
 .game-details {
@@ -73,36 +58,23 @@ body {
     margin-top: 20px;
 }
 
-.game-details h2 {
-    margin: 0;
-}
-
-.author {
-    color: #00a74f;
-}
-
 .actions {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
     margin-top: 10px;
 }
 
 .action-button {
-    background-color: #2a2a2a;
+    background-color: #444;
+    color: #fff;
     border: none;
-    color: white;
     padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.action-button:hover {
-    background-color: #3a3a3a;
-}
-
 .stats {
     margin-top: 10px;
+    font-size: 14px;
 }
 
 .popup {
@@ -110,12 +82,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    color: black;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
     text-align: center;
+    width: 300px;
 }
 
 .popup-content {
@@ -126,30 +98,29 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    color: #fff;
     cursor: pointer;
 }
 
 .download-button {
-    background-color: #00a74f;
+    background-color: #00b300;
+    color: #fff;
     border: none;
-    color: white;
     padding: 10px 20px;
-    border-radius: 5px;
+    margin: 10px 0;
     cursor: pointer;
-}
-
-.download-button:hover {
-    background-color: #008f3d;
+    border-radius: 5px;
 }
 
 .help-link {
-    display: block;
-    margin-top: 10px;
-    color: #00a74f;
+    color: #00b300;
     text-decoration: none;
 }
 
 .help-link:hover {
     text-decoration: underline;
+}
+
+.show-popup .popup {
+    display: block;
 }
